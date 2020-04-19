@@ -113,6 +113,7 @@ button {
   box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1),
     inset 0 2px 0 0 hsla(0, 0%, 100%, 0.06);
   cursor: pointer;
+  text-align: center;
 }
 
 textarea {
@@ -125,6 +126,42 @@ textarea {
   font-size: 14px;
 }
 
+input {
+  height: 20px !important;
+  resize: none;
+  min-width: 400px;
+  padding: 15px;
+  border: 1px solid rgb(234, 237, 243);
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 10px;
+}
+
 .swal2-styled.swal2-confirm {
   background-color: #1461d2 !important;
+}
+
+.inputContainer {
+  display: grid;
+}
+
+.buttonContainer {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.redButton {
+  color: #fff;
+  background: #e6492d;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#e73c1e),
+    to(#cf3014)
+  );
+  background-image: linear-gradient(-180deg, #e73c1e, #cf3014);
+  border: 1px solid #ba0b15;
+  box-shadow: 0 1px 1px 0 rgba(43, 26, 24, 0.1),
+    inset 0 2px 0 0 hsla(0, 0%, 100%, 0.08);
 }
