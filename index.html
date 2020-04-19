@@ -15,18 +15,26 @@
 
     <!-- JS -->
     <script src="./index.js"></script>
+
+    <!-- Google Fonts Maven Pro -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="root">
     <div class="container">
-      <p style="margin: 20px;">Enter Text</p>
-      <input
-        id="newText"
-        style="margin: 20px; width: 50%; height: 20px;"
-        type="text"
-      />
-      <button style="margin: 20px; margin-top: 0px;" onclick="changeText()">
-        Submit
-      </button>
+      <div class="optionsContainer">
+        <h1 style="margin: 20px;">Enter Text</h1>
+        <textarea
+          id="newText"
+          style="margin: 20px; width: 50%; height: 20px;"
+          type="text"
+        ></textarea>
+        <button style="margin: 20px; margin-top: 0px;" onclick="changeText()">
+          Submit
+        </button>
+      </div>
       <div id="lottieDomContainer" style="width: 600px; padding-top: 100px;">
         <script
           src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.8/lottie.js"
@@ -55,6 +63,12 @@
           //   });
         </script>
       </div>
+      <button style="margin: 20px; margin-top: 50px;" onclick="downloadVideo()">
+        Download Video
+      </button>
     </div>
+    <!--SweetAlert2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetalert2.all.min.js"></script>
   </body>
 </html>

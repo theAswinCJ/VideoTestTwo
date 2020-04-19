@@ -13,3 +13,11 @@ function changeText() {
     anim.play();
   }
 }
+
+function downloadVideo() {
+  swal.fire(
+    "Coming Soon",
+    "Research is ongoing to make this video download right from this page",
+    "info"
+  );
+}

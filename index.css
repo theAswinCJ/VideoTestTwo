@@ -1,13 +1,130 @@
 .root {
   text-align: center;
-  background-color: beige;
-  padding: 100px;
+  background-color: #f1f1f6;
+  padding: 30px;
   height: calc(100vh - 220px);
 }
 
 .container {
-  display: "grid";
-  align-items: "center";
-  justify-items: "center";
-  height: "100%";
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+
+.optionsContainer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-auto-flow: column;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+li {
+  font-size: 16px !important;
+}
+
+p {
+  font-size: 16px;
+}
+
+.menuButton {
+  font-size: 18px;
+}
+
+.highlightText {
+  font-size: 18px !important;
+}
+
+@media (min-width: 768px) {
+  .highlightText {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .highlightText {
+    font-size: 22px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .highlightText {
+    font-size: 25px !important;
+  }
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 38px;
+  padding: 0 18px;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: relative;
+  background: #fff;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#f6f7f9),
+    to(#fff)
+  );
+  background-image: linear-gradient(0deg, #f6f7f9, #fff);
+  border: 1px solid #d8dce6;
+  box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.05),
+    inset 0 2px 0 0 hsla(0, 0%, 100%, 0.05);
+  color: #3e3f42;
+  border-radius: 4px;
+  color: #fff;
+  background: #1665d8;
+  background-image: linear-gradient(-1deg, #1665d8 2%, #1f6fe5 98%);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#1665d8),
+    to(#1f6fe5)
+  );
+  background-image: linear-gradient(0deg, #1665d8, #1f6fe5);
+  border: 1px solid #1461d2;
+  box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1),
+    inset 0 2px 0 0 hsla(0, 0%, 100%, 0.06);
+  cursor: pointer;
+}
+
+textarea {
+  height: 100px !important;
+  resize: none;
+  min-width: 400px;
+  padding: 15px;
+  border: 1px solid rgb(234, 237, 243);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #1461d2 !important;
 }
