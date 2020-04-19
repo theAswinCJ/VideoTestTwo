@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    <title>Video Generator</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="shortcut icon" href="ftco-32x32.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- JS -->
+    <script src="./index.js"></script>
+  </head>
+  <body class="root">
+    <div class="container">
+      <p style="margin: 20px;">Enter Text</p>
+      <input
+        id="newText"
+        style="margin: 20px; width: 50%; height: 20px;"
+        type="text"
+      />
+      <button style="margin: 20px; margin-top: 0px;" onclick="changeText()">
+        Submit
+      </button>
+      <div id="lottieDomContainer" style="width: 600px; padding-top: 100px;">
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.8/lottie.js"
+          integrity="sha256-Y4rS4Ap3MPFubRtJBY2Kq7ejVXKIQ06Ll1HEcTkLRlo="
+          crossorigin="anonymous"
+        ></script>
+        <script>
+          var params = {
+            container: document.getElementById("lottieDomContainer"),
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path:
+              "https://assets6.lottiefiles.com/packages/lf20_ZwqlKN/data.json",
+          };
+          var anim;
+
+          anim = lottie.loadAnimation(params);
+
+          // Add event listener to change it here itself
+          //   anim.addEventListener("DOMLoaded", function () {
+          //     anim.renderer.elements[1].updateDocumentData({
+          //       t: "111",
+          //     });
+          //     anim.play();
+          //   });
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

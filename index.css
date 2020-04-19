@@ -1,0 +1,13 @@
+.root {
+  text-align: center;
+  background-color: beige;
+  padding: 100px;
+  height: calc(100vh - 220px);
+}
+
+.container {
+  display: "grid";
+  align-items: "center";
+  justify-items: "center";
+  height: "100%";
+}
